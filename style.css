@@ -85,7 +85,7 @@ main {
     color: #7df125;
 }
 .movie-info span.orange {
-    color: #ffd208;
+    color: #ffbd08;
 }
 .movie-info span.red {
     color: #ff4640;
@@ -100,4 +100,9 @@ main {
     right: 0;
     max-height: 100%;
     transform: translateY(101%);
+    transition: transform 0.2s ease-in-out;
+}
+
+.movie:hover .overview{
+    transform: translateY(0);
 }
