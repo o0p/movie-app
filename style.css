@@ -80,3 +80,13 @@ main {
     border-radius: 0.1875rem;
     font-weight: bold;
 }
+
+.movie-info span.green {
+    color: #7df125;
+}
+.movie-info span.orange {
+    color: #ffd208;
+}
+.movie-info span.red {
+    color: #ff4640;
+}
