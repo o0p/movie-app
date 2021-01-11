@@ -30,3 +30,12 @@ header {
     padding: .5rem 1rem;
     color: white;
 }
+
+.search::after {
+    color: #7478c5;
+}
+
+.search:focus {
+    outline:  none;
+    background-color: var(--primary-color);
+}
