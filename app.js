@@ -14,15 +14,14 @@ async function getMovies(url) {
 };
 
 function showMovies(movies) {
-    movies.forEach(function(movie) {
-        const { title, poster_path, vote_average, overview } = movie;
+    main.innerHTML = '';
         
+    movies.forEach(function(movie) {
+        const { title, poster_path, vote_average, overview } = movie;        
         const movieEl = document.createElement('div');
         movieEl.classList.add('movie');
-        movieEl.innerHTML = '';
-        
+       
         movieEl.innerHTML = `
-        <div class="movie">
             <img src="${IMG_PATH + poster_path}" alt="${title}">
 
             <div class="movie-info">
@@ -33,7 +32,6 @@ function showMovies(movies) {
             <div class="overview">
                 <h3>Overview</h3>
                 ${overview}
-            </div>
         `
         main.appendChild(movieEl);
     });
